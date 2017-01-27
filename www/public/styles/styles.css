@@ -1,0 +1,196 @@
+body { 
+  background-color: #fff;
+  color: #000;
+  font: 300 16px/1 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------------------- */                                
+/* ---------- NAVBAR & SIDENAV -------- */
+/* -------------------------------- */  
+
+
+.centered { 
+  margin: 0 auto;
+  text-align: center;
+} 
+
+@media screen and (max-width: 767px){
+#logo{
+  margin-left: 10px;
+  text-align: left;
+  margin-bottom: -80px;
+
+} 
+}
+  @media screen and (min-width: 768px){
+    #logo{
+      position: relative;
+      margin-top: 0;
+      margin-bottom: -22px;
+      z-index: 1;
+    }
+  }
+#navbar-top-links{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+} 
+  @media screen and (max-width: 767px){
+    #navbar-top-links{
+      display: none;
+    }
+  }
+#navbar-top-links li{
+  display: inline;
+}
+#navbar-top-links li a {
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+  padding-right: 15px;
+}
+#navbar-top{
+  z-index: -1;
+  position: relative;
+  height: 80px;
+  background-color: #f8be15; /* vihreä: 87bb40 */
+}
+#dropdown-icon,
+#dropdown-icon-sidenav{
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  background-image: url("/public/images/dropdown-icon.png");
+  background-size: cover;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+#dropdown-icon{
+  right: 25px;
+  top: 25px;
+}
+  @media screen and (min-width: 768px){
+    #dropdown-icon{
+      display: none;
+    }
+  }
+#dropdown-icon-sidenav{
+  right: 15px;
+  top: 15px;
+}
+
+
+.sidenav-menu{
+  margin: 0;
+  padding: 0;
+  display: block;
+  list-style: none;
+} 
+.sidenav{
+  background-color: #222222;
+}
+
+.sidenav-link{
+  display: block;
+  text-decoration: none !important;
+  color: #fff !important;
+  font-size: 22px !important;
+  padding: 15px !important;
+}
+
+.horizontal-scrolling {
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.vertical-scrolling {
+  white-space: nowrap;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+/* -------------------------------- */                                
+/* ---------- MAIN CONTENT -------- */
+/* -------------------------------- */                                 
+
+
+.welcome-mascot{
+    height: 100vh;
+}
+#maskotti{
+  margin: auto auto auto 40px;
+  width: 100%;
+  height: auto;
+}
+
+.help-button {
+  -moz-box-shadow: 2px 3px 0px 0px #899599;
+  -webkit-box-shadow: 2px 3px 0px 0px #899599;
+  box-shadow: 2px 3px 0px 0px #899599;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #bab1ba));
+  background:-moz-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+  background:-webkit-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+  background:-o-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+  background:-ms-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+  background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#bab1ba',GradientType=0);
+  background-color:#ededed;
+  -moz-border-radius:17px;
+  -webkit-border-radius:17px;
+  border-radius:17px;
+  border:1px solid #d6bcd6;
+  display:inline-block;
+  cursor:pointer;
+  color:#3a8a9e;
+  font-family:Arial;
+  font-size:18px;
+  font-weight:bold;
+  padding:8px 25px;
+  text-decoration:none;
+  text-shadow:0px 0px 0px #e1e2ed;
+}
+.help-button:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab1ba), color-stop(1, #ededed));
+  background:-moz-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+  background:-webkit-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+  background:-o-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+  background:-ms-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+  background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bab1ba', endColorstr='#ededed',GradientType=0);
+  background-color:#bab1ba;
+}
+.help-button:active {
+  position:relative;
+  top:1px;
+}
+
+.help-button{
+  position: absolute;
+  margin:  -80% auto auto 20%;
+
+}
+
+.help-slide{
+  background-color: #222;
+}
+#help-otsikko{
+  font-size: 22px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+#help-slide-phone{
+  max-height: 100%;
+  max-width: 100%;
+  margin: 40% auto auto auto;
+}
